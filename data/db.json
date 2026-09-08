@@ -1,0 +1,1632 @@
+{
+  "users": [
+    {
+      "id": "U-ADMIN",
+      "name": "Admin",
+      "email": "admin@truf.com",
+      "password": "$2a$10$kpWD5AmRkZgGePWMavX32.JFeY4PC2c7XC0nOXTRwXLx.ypiy9GM6",
+      "role": "admin"
+    },
+    {
+      "id": "U-DEMO",
+      "name": "Demo Player",
+      "email": "player@truf.com",
+      "password": "$2a$10$4ejibAGJRxwzJw7Llj8chOxA6.ErWQtHuWCih3Un4/MXAs358AxSG",
+      "role": "customer",
+      "phone": "9876543210"
+    },
+    {
+      "id": "U-V7YYXX2Z",
+      "name": "Bharathi N",
+      "email": "priya@example.com",
+      "phone": "09360834396",
+      "password": "$2a$10$xwbeVYiFre4eZE4cqGHjbOht0yCidz6ArP2jtV4SZEWPzRR206f8C",
+      "role": "customer"
+    },
+    {
+      "id": "U-XSSIPKHU",
+      "name": "Bharathi N",
+      "email": "bharathinagaraj2642@gmail.com",
+      "phone": "09360834396",
+      "password": "$2a$10$SRRqRLWXWuhJU7zJ80tTNeiUy7Z1ZlUKRTqpUBG6.vuMswGaiU2Wi",
+      "role": "customer"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "C1",
+      "code": "WELCOME10",
+      "type": "first",
+      "value": 10,
+      "label": "First time users get 10% off",
+      "active": true,
+      "valueType": "percent"
+    },
+    {
+      "id": "C2",
+      "code": "FESTIVE50",
+      "type": "festival",
+      "value": 50,
+      "label": "Festival Special — flat ₹50 off on cricket bookings",
+      "active": true,
+      "valueType": "flat"
+    },
+    {
+      "id": "C3",
+      "code": "WEEKEND20",
+      "type": "weekend",
+      "value": 20,
+      "label": "Weekend offer — 20% off Saturday & Sunday slots",
+      "active": true,
+      "valueType": "percent",
+      "dayFilter": [
+        "Sat",
+        "Sun"
+      ]
+    },
+    {
+      "id": "C4",
+      "code": "WEEKDAY15",
+      "type": "weekday",
+      "value": 15,
+      "label": "Weekday offer — 15% off Mon-Fri mornings",
+      "active": true,
+      "valueType": "percent",
+      "dayFilter": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ]
+    },
+    {
+      "id": "C5",
+      "code": "VIP300",
+      "type": "regular",
+      "value": 300,
+      "label": "Loyal customer — ₹300 off (over ₹1500)",
+      "minSubtotal": 1500,
+      "active": true,
+      "valueType": "flat"
+    },
+    {
+      "id": "C6",
+      "code": "CRICKET25",
+      "type": "first",
+      "value": 25,
+      "label": "Cricket debut — 25% off your first cricket booking",
+      "active": true,
+      "valueType": "percent"
+    },
+    {
+      "id": "C7",
+      "code": "NIGHTOWL",
+      "type": "weekday",
+      "value": 20,
+      "label": "Night owl special — 20% off evening slots (7PM-10PM)",
+      "active": true,
+      "valueType": "percent",
+      "slotHourMin": 19
+    },
+    {
+      "id": "C8",
+      "code": "PREBOOK30",
+      "type": "regular",
+      "value": 30,
+      "label": "Pre-book champion — 30% off when you book 7+ days early",
+      "active": true,
+      "valueType": "percent",
+      "advanceDays": 7
+    }
+  ],
+  "offers": [
+    {
+      "id": "O1",
+      "type": "festival",
+      "title": "Festival Cricket Mania",
+      "subtitle": "Celebrate with up to ₹50 OFF on every cricket tournament booking",
+      "badge": "HURRY",
+      "discount": 50,
+      "gradient": "from-orange-500 via-pink-500 to-rose-500",
+      "active": true
+    },
+    {
+      "id": "O2",
+      "type": "weekend",
+      "title": "Weekend T20 Offer",
+      "subtitle": "Grab 20% OFF on Saturday & Sunday cricket slots",
+      "badge": "SAT-SUN",
+      "discount": 20,
+      "gradient": "from-cyan-500 via-blue-500 to-indigo-500",
+      "active": true
+    },
+    {
+      "id": "O3",
+      "type": "weekday",
+      "title": "Weekday Cricket Deal",
+      "subtitle": "Skip the crowd — 15% OFF on weekday morning cricket sessions",
+      "badge": "MON-FRI",
+      "discount": 15,
+      "gradient": "from-emerald-500 via-teal-500 to-green-500",
+      "active": true
+    },
+    {
+      "id": "O4",
+      "type": "prebooking",
+      "title": "Early Bird Cricket",
+      "subtitle": "Book 7+ days early and save 30% on entry fee",
+      "badge": "PRE-BOOK",
+      "discount": 30,
+      "gradient": "from-violet-500 via-purple-500 to-fuchsia-500",
+      "active": true
+    }
+  ],
+  "cricketMatches": [
+    {
+      "id": "CRI-1",
+      "title": "Chennai Super Strikes T10",
+      "format": "T10",
+      "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Chennai Warriors",
+          "captain": "Ravi Kumar",
+          "logo": "🏏"
+        },
+        {
+          "name": "Marina Dolphins",
+          "captain": "Suresh Raj",
+          "logo": "🐬"
+        }
+      ],
+      "venue": "Truf Cricket Ground, Velachery",
+      "city": "Chennai",
+      "date": 1788697170832,
+      "matchTime": "09:00 AM",
+      "entryFee": 299,
+      "prizePool": "₹25,000",
+      "overs": 10,
+      "status": "upcoming",
+      "featured": true,
+      "spotsLeft": 10,
+      "totalSpots": 22,
+      "rating": 4.8,
+      "duration": "3 hours",
+      "description": "Fast-paced T10 action with power hitting and tight bowling. Join now for an adrenaline-packed morning!",
+      "benefits": [
+        "Professional umpires & certified gear",
+        "Live score tracking & highlights",
+        "Winner takes ₹25,000 cash prize",
+        "Pre-book up to 30 days ahead"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-1-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-02",
+          "time": "07:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-15",
+          "time": "08:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-1-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-2",
+      "title": "Weekend T20 Bash",
+      "format": "T20",
+      "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Anna Nagar Kings",
+          "captain": "Vikram Singh",
+          "logo": "👑"
+        },
+        {
+          "name": "T Nagar Tigers",
+          "captain": "Karthik Dev",
+          "logo": "🐯"
+        }
+      ],
+      "venue": "Green Arena, Anna Nagar",
+      "city": "Chennai",
+      "date": 1788869970832,
+      "matchTime": "04:00 PM",
+      "entryFee": 499,
+      "prizePool": "₹50,000",
+      "overs": 20,
+      "status": "upcoming",
+      "featured": true,
+      "spotsLeft": 7,
+      "totalSpots": 22,
+      "rating": 4.9,
+      "duration": "6 hours",
+      "description": "Saturday evening T20 showdown under floodlights. Team strategies, big sixes and intense finishes guaranteed!",
+      "benefits": [
+        "Floodlit stadium with live commentary",
+        "DJI camera highlights reel",
+        "Winner takes ₹50,000 + trophy",
+        "Free team jerseys for all players"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-2-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-07",
+          "time": "12:00 PM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-2-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-3",
+      "title": "Corporate Cricket Cup",
+      "format": "ODI",
+      "image": "https://images.unsplash.com/photo-1675693303492-9a5bc898bf94?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Tech Titans",
+          "captain": "Arun M",
+          "logo": "💻"
+        },
+        {
+          "name": "Finance Foxes",
+          "captain": "Deepak R",
+          "logo": "🦊"
+        }
+      ],
+      "venue": "Sports Village, OMR",
+      "city": "Chennai",
+      "date": 1789042770832,
+      "matchTime": "07:00 AM",
+      "entryFee": 599,
+      "prizePool": "₹75,000",
+      "overs": 50,
+      "status": "upcoming",
+      "featured": false,
+      "spotsLeft": 16,
+      "totalSpots": 44,
+      "rating": 4.6,
+      "duration": "Full day",
+      "description": "Corporate teams battle it out in a full-day ODI format. Networking meets cricket — play hard, connect harder.",
+      "benefits": [
+        "Full-day corporate cricket experience",
+        "Networking lunch included",
+        "Winner takes ₹75,000 + corporate shield",
+        "Professional photography & drone shots"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-3-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-3-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-4",
+      "title": "Beach Cricket 6s",
+      "format": "T6",
+      "image": "https://images.unsplash.com/photo-1750716413444-c8a957fcf35c?w=1200&q=80",
+      "teams": [
+        {
+          "name": "ECR Sharks",
+          "captain": "Prakash V",
+          "logo": "🦈"
+        },
+        {
+          "name": "Bay Breakers",
+          "captain": "Mohan S",
+          "logo": "🌊"
+        }
+      ],
+      "venue": "ECR Beach Ground",
+      "city": "Chennai",
+      "date": 1788610770832,
+      "matchTime": "06:00 AM",
+      "entryFee": 199,
+      "prizePool": "₹10,000",
+      "overs": 6,
+      "status": "upcoming",
+      "featured": false,
+      "spotsLeft": 4,
+      "totalSpots": 12,
+      "rating": 4.7,
+      "duration": "90 mins",
+      "description": "Sunrise beach cricket — just bat, bowl and have fun. Sand between your toes, cricket in your heart.",
+      "benefits": [
+        "Beach-side cricket with sunrise view",
+        "Just 6 overs of pure fun",
+        "Winner takes ₹10,000 cash",
+        "Free breakfast after the match"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-4-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-4-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-5",
+      "title": "Night Cricket League",
+      "format": "T8",
+      "image": "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Velachery Vipers",
+          "captain": "Rajesh K",
+          "logo": "🐍"
+        },
+        {
+          "name": "Porur Panthers",
+          "captain": "Sanjay P",
+          "logo": "🐆"
+        }
+      ],
+      "venue": "Truf Arena, Velachery",
+      "city": "Chennai",
+      "date": 1788783570832,
+      "matchTime": "07:00 PM",
+      "entryFee": 349,
+      "prizePool": "₹30,000",
+      "overs": 8,
+      "status": "upcoming",
+      "featured": true,
+      "spotsLeft": 6,
+      "totalSpots": 16,
+      "rating": 4.8,
+      "duration": "2.5 hours",
+      "description": "Under-the-lights T8 league. Cool evening breeze, floodlit action and fierce rivalries — every ball counts!",
+      "benefits": [
+        "Premium floodlit arena",
+        "LED scoreboards & live ball tracking",
+        "Winner takes ₹30,000 cash",
+        "Post-match dinner for all players"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-5-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-5-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-6",
+      "title": "Sunday Smash Cricket",
+      "format": "T5",
+      "image": "https://images.unsplash.com/photo-1774168062260-b0a1b63026ba?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Adyar Aces",
+          "captain": "Kiran J",
+          "logo": "♠️"
+        },
+        {
+          "name": "Nungambakkam Ninjas",
+          "captain": "Aakash T",
+          "logo": "🥷"
+        }
+      ],
+      "venue": "City Sports Complex, T Nagar",
+      "city": "Chennai",
+      "date": 1788956370832,
+      "matchTime": "10:00 AM",
+      "entryFee": 149,
+      "prizePool": "₹8,000",
+      "overs": 5,
+      "status": "upcoming",
+      "featured": false,
+      "spotsLeft": 4,
+      "totalSpots": 10,
+      "rating": 4.5,
+      "duration": "1 hour",
+      "description": "Quick-hit Sunday morning cricket. 5 overs of pure fun — perfect for weekend warriors and cricket lovers.",
+      "benefits": [
+        "Quick 5-over cricket for busy people",
+        "Beginner friendly — all skill levels",
+        "Winner takes ₹8,000 cash",
+        "Free cricket bat & ball provided"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-6-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-6-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-7",
+      "title": "TRUF Premier League T12",
+      "format": "T12",
+      "image": "https://images.unsplash.com/photo-1771909713995-d793a0c93660?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Chennai Super Kings XI",
+          "captain": "Arjun Patel",
+          "logo": "🦁"
+        },
+        {
+          "name": "Mumbai Mavericks",
+          "captain": "Kiran Sharma",
+          "logo": "🏏"
+        }
+      ],
+      "venue": "TRUF Premier Ground, OMR",
+      "city": "Chennai",
+      "date": 1789301970832,
+      "matchTime": "03:00 PM",
+      "entryFee": 699,
+      "prizePool": "₹1,00,000",
+      "overs": 12,
+      "status": "upcoming",
+      "featured": true,
+      "spotsLeft": 17,
+      "totalSpots": 22,
+      "rating": 4.9,
+      "duration": "4 hours",
+      "description": "The flagship TRUF Premier League! Premium T12 cricket with professional setup, live streaming and massive prize pool.",
+      "benefits": [
+        "Live-streamed on TRUF YouTube",
+        "Professional commentary team",
+        "Winner takes ₹1,00,000 + trophy",
+        "Man of the Match gets ₹5,000 bonus"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-7-slot-01",
+          "time": "06:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-7-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    },
+    {
+      "id": "CRI-8",
+      "title": "Powerplay T4 Blitz",
+      "format": "T4",
+      "image": "https://images.unsplash.com/photo-1750716413381-1c9a0d94db84?w=1200&q=80",
+      "teams": [
+        {
+          "name": "Guindy Gladiators",
+          "captain": "Mohammed Ali",
+          "logo": "⚔️"
+        },
+        {
+          "name": "Chetpet Chargers",
+          "captain": "Venkat Reddy",
+          "logo": "⚡"
+        }
+      ],
+      "venue": "TRUF Blitz Arena, Guindy",
+      "city": "Chennai",
+      "date": 1788524370832,
+      "matchTime": "05:30 PM",
+      "entryFee": 99,
+      "prizePool": "₹5,000",
+      "overs": 4,
+      "status": "upcoming",
+      "featured": false,
+      "spotsLeft": 3,
+      "totalSpots": 8,
+      "rating": 4.4,
+      "duration": "45 mins",
+      "description": "Ultra-short T4 powerplay blitz! Every ball is a boundary attempt — 4 overs of absolute mayhem.",
+      "benefits": [
+        "Quickest cricket format — just 45 mins",
+        "Perfect after work cricket fix",
+        "Winner takes ₹5,000 cash",
+        "No experience needed — just vibes"
+      ],
+      "timeSlots": [
+        {
+          "id": "CRI-8-slot-01",
+          "time": "06:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-02",
+          "time": "07:00 AM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-03",
+          "time": "08:00 AM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-04",
+          "time": "09:00 AM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-05",
+          "time": "10:00 AM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-06",
+          "time": "11:00 AM",
+          "booked": 2,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-07",
+          "time": "12:00 PM",
+          "booked": 1,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-08",
+          "time": "01:00 PM",
+          "booked": 0,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-09",
+          "time": "02:00 PM",
+          "booked": 3,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-10",
+          "time": "03:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-11",
+          "time": "04:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-12",
+          "time": "05:00 PM",
+          "booked": 6,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-13",
+          "time": "06:00 PM",
+          "booked": 5,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-14",
+          "time": "07:00 PM",
+          "booked": 8,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-15",
+          "time": "08:00 PM",
+          "booked": 7,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-16",
+          "time": "09:00 PM",
+          "booked": 4,
+          "capacity": 8
+        },
+        {
+          "id": "CRI-8-slot-17",
+          "time": "10:00 PM",
+          "booked": 2,
+          "capacity": 8
+        }
+      ],
+      "bookedSlots": {}
+    }
+  ],
+  "cricketBookings": [
+    {
+      "id": "CB-4LUX4ZZE",
+      "matchId": "CRI-8",
+      "matchName": "Powerplay T4 Blitz",
+      "format": "T4",
+      "matchImage": "https://images.unsplash.com/photo-1750716413381-1c9a0d94db84?w=1200&q=80",
+      "userId": "U-DEMO",
+      "slotId": "CRI-8-slot-04",
+      "slotTime": "09:00 AM",
+      "players": 2,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": "WELCOME10",
+      "discount": 20,
+      "total": 178,
+      "basePrice": 198,
+      "date": "2026-09-05",
+      "bookingDate": "2026-09-04T06:02:20.188Z",
+      "status": "cancelled",
+      "venue": "TRUF Blitz Arena, Guindy",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-2RFKT1KO",
+      "matchId": "CRI-1",
+      "matchName": "Chennai Super Strikes T10",
+      "format": "T10",
+      "matchImage": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-1-slot-01",
+      "slotTime": "06:00 AM",
+      "players": 2,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": null,
+      "discount": 0,
+      "total": 598,
+      "basePrice": 598,
+      "date": "2026-09-07",
+      "bookingDate": "2026-09-07T06:44:54.059Z",
+      "status": "cancelled",
+      "venue": "Truf Cricket Ground, Velachery",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-QCHLRB4W",
+      "matchId": "CRI-7",
+      "matchName": "TRUF Premier League T12",
+      "format": "T12",
+      "matchImage": "https://images.unsplash.com/photo-1771909713995-d793a0c93660?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-7-slot-01",
+      "slotTime": "06:00 AM",
+      "players": 1,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": null,
+      "discount": 0,
+      "total": 699,
+      "basePrice": 699,
+      "date": "2026-09-07",
+      "bookingDate": "2026-09-07T06:55:28.105Z",
+      "status": "confirmed",
+      "venue": "TRUF Premier Ground, OMR",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-ERCD6MFM",
+      "matchId": "CRI-1",
+      "matchName": "Chennai Super Strikes T10",
+      "format": "T10",
+      "matchImage": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-1-slot-02",
+      "slotTime": "07:00 AM",
+      "players": 1,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": null,
+      "discount": 0,
+      "total": 299,
+      "basePrice": 299,
+      "date": "2026-09-07",
+      "bookingDate": "2026-09-07T06:56:09.622Z",
+      "status": "confirmed",
+      "venue": "Truf Cricket Ground, Velachery",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-FIDCU489",
+      "matchId": "CRI-2",
+      "matchName": "Weekend T20 Bash",
+      "format": "T20",
+      "matchImage": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-2-slot-07",
+      "slotTime": "12:00 PM",
+      "players": 1,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": "FESTIVE50",
+      "discount": 50,
+      "total": 449,
+      "basePrice": 499,
+      "date": "2026-09-07",
+      "bookingDate": "2026-09-07T06:57:25.189Z",
+      "status": "confirmed",
+      "venue": "Green Arena, Anna Nagar",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-ZX8NKMPI",
+      "matchId": "CRI-1",
+      "matchName": "Chennai Super Strikes T10",
+      "format": "T10",
+      "matchImage": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-1-slot-15",
+      "slotTime": "08:00 PM",
+      "players": 1,
+      "paymentMethod": "gpay",
+      "payerName": "Demo Player",
+      "phone": "9876543210",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": "FESTIVE50",
+      "discount": 50,
+      "total": 249,
+      "basePrice": 299,
+      "date": "2026-09-06",
+      "bookingDate": "2026-09-07T10:29:53.979Z",
+      "status": "confirmed",
+      "venue": "Truf Cricket Ground, Velachery",
+      "city": "Chennai"
+    },
+    {
+      "id": "CB-67J4SVMO",
+      "matchId": "CRI-6",
+      "matchName": "Sunday Smash Cricket",
+      "format": "T5",
+      "matchImage": "https://images.unsplash.com/photo-1774168062260-b0a1b63026ba?w=1200&q=80",
+      "userId": "U-DEMO",
+      "userName": "Demo Player",
+      "slotId": "CRI-6-slot-06",
+      "slotTime": "11:00 AM",
+      "players": 4,
+      "paymentMethod": "UPI",
+      "payerName": "Demo Player",
+      "phone": "9999999999",
+      "upiId": null,
+      "cardLast4": null,
+      "cardExpiry": null,
+      "couponCode": null,
+      "discount": 0,
+      "total": 596,
+      "basePrice": 596,
+      "date": "2026-09-08",
+      "bookingDate": "2026-09-08T04:00:07.998Z",
+      "status": "cancelled",
+      "venue": "City Sports Complex, T Nagar",
+      "city": "Chennai"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "REM-1",
+      "userId": "U-DEMO",
+      "type": "matchReminder",
+      "title": "Match Tomorrow!",
+      "message": "Chennai Super Strikes T10 starts at 09:00 AM. Don't forget your gear!",
+      "matchId": "CRI-1",
+      "read": true,
+      "createdAt": 1788351570832
+    },
+    {
+      "id": "REM-2",
+      "userId": "U-DEMO",
+      "type": "offerReminder",
+      "title": "Festival Offer Ending Soon!",
+      "message": "Use code FESTIVE50 and save ₹50 on your next cricket booking. Offer ends in 2 days!",
+      "read": true,
+      "createdAt": 1788265170832
+    },
+    {
+      "id": "REM-3",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Booking Confirmed!",
+      "message": "Your slot for Night Cricket League is confirmed. See you at Truf Arena, Velachery!",
+      "matchId": "CRI-5",
+      "read": true,
+      "createdAt": 1788178770832
+    },
+    {
+      "id": "REM-FM7GS81Z",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Powerplay T4 Blitz is confirmed! 09:00 AM at TRUF Blitz Arena, Guindy. See you on the ground!",
+      "matchId": "CRI-8",
+      "read": true,
+      "createdAt": 1788501740188
+    },
+    {
+      "id": "REM-JOM6CV92",
+      "userId": "U-DEMO",
+      "type": "cancellation",
+      "title": "Booking Cancelled",
+      "message": "Your booking for Powerplay T4 Blitz has been cancelled. Refund will be processed in 3-5 business days.",
+      "matchId": "CRI-8",
+      "read": true,
+      "createdAt": 1788503248818
+    },
+    {
+      "id": "REM-17SBDXP9",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Chennai Super Strikes T10 on 2026-09-07 at 06:00 AM is confirmed! See you at Truf Cricket Ground, Velachery!",
+      "matchId": "CRI-1",
+      "read": true,
+      "createdAt": 1788763494059
+    },
+    {
+      "id": "REM-07R02G0B",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for TRUF Premier League T12 on 2026-09-07 at 06:00 AM is confirmed! See you at TRUF Premier Ground, OMR!",
+      "matchId": "CRI-7",
+      "read": true,
+      "createdAt": 1788764128105
+    },
+    {
+      "id": "REM-X86JCYW9",
+      "userId": "U-DEMO",
+      "type": "cancellation",
+      "title": "Booking Cancelled",
+      "message": "Your booking for Chennai Super Strikes T10 has been cancelled. Refund will be processed in 3-5 business days.",
+      "matchId": "CRI-1",
+      "read": true,
+      "createdAt": 1788764162993
+    },
+    {
+      "id": "REM-82YCN6Z5",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Chennai Super Strikes T10 on 2026-09-07 at 07:00 AM is confirmed! See you at Truf Cricket Ground, Velachery!",
+      "matchId": "CRI-1",
+      "read": true,
+      "createdAt": 1788764169622
+    },
+    {
+      "id": "REM-LNJNN9DR",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Weekend T20 Bash on 2026-09-07 at 12:00 PM is confirmed! See you at Green Arena, Anna Nagar!",
+      "matchId": "CRI-2",
+      "read": true,
+      "createdAt": 1788764245189
+    },
+    {
+      "id": "REM-5XYAEEWU",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Chennai Super Strikes T10 on 2026-09-06 at 08:00 PM is confirmed! See you at Truf Cricket Ground, Velachery!",
+      "matchId": "CRI-1",
+      "read": true,
+      "createdAt": 1788776993980
+    },
+    {
+      "id": "REM-YT2YIE30",
+      "userId": "U-DEMO",
+      "type": "bookingConfirmation",
+      "title": "Cricket Booking Confirmed!",
+      "message": "Your slot for Sunday Smash Cricket on 2026-09-08 at 11:00 AM is confirmed! See you at City Sports Complex, T Nagar!",
+      "matchId": "CRI-6",
+      "read": false,
+      "createdAt": 1788840007998
+    },
+    {
+      "id": "REM-Q6SS6Y91",
+      "userId": "U-DEMO",
+      "type": "cancellation",
+      "title": "Booking Cancelled",
+      "message": "Your booking for Sunday Smash Cricket has been cancelled. Refund will be processed in 3-5 business days.",
+      "matchId": "CRI-6",
+      "read": false,
+      "createdAt": 1788840076259
+    }
+  ]
+}
